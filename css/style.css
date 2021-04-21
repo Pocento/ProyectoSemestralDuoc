@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: white;
+    z-index: 10;
+}
+
+header nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+header nav li {
+    margin: 0 15px;
+
+}
+
+@media (max-width:1000px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        width: 100%;
+    }
+
+    header nav li a {
+        font-size: 10px;
+    }
+}
+
+section {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    padding: 30px;
+    margin-bottom: 397px;
+}
+
+.banner {
+    position: relative;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    min-height: 80px;
+}
+
+.banner .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/accesorios.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+.banner .banner-img::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    content: '';
+}
+.fondo .fondoimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/fondologin.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+.fondo .fondoregistro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/fondoregistro.jpg');
+    background-size: cover;
+    z-index: -1;
+
+}
+.fondo .fondocontacto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/gatito.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+.fondo .fondoimg::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    content: '';
+}
+.fondo .fondoregistro::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    content: '';
+}
+@media (max-width:1000px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width:600px) {
+    section {
+        padding: 130px 30px;
+    }
+}
+
+.banner h1 {
+    margin-bottom: 15px;
+    font-size: 60px;
+}
+
+.banner h2 {
+    margin-bottom: 15px;
+    font-size: 60px;
+}
+
+.banner a.banner-btn {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 70px;
+    border-radius: 60px;
+    background: crimson;
+}
+
+.logo-btn {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+}
+
+@media (max-width:800px) {
+    .banner {
+         min-height: 400px;
+    }
+    .banner h1 {
+        font-size: 40px;
+    }
+    .banner h2 {
+        font-size: 30px;
+    }
+
+    .banner a.banner-btn {
+        font-size: 15px;
+        padding: 15px 30px;
+        
+    }
+}
+
+footer {
+    /* FLEX */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+   
+ 
+}
+#formulario {
+    margin: auto;
+    width: 80%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 20px;
+}
+.login-titulo{
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+
+}
+.registro-titulo{
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+}
+.login{
+    margin: auto;
+    margin-top: 0px;
+    background-color: white ;
+    border-radius: 70px;
+    width: 50%;
+}
+.registro{
+    margin: auto;
+    margin-top: 0px;
+    background-color: white ;
+    border-radius: 70px;
+    width: 50%;
+}
+.texto-inicio{
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    text-align: center;
+    color:white ;
+    border-radius: 10px;
+}
+.btn{
+    border: black;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: blue;
+}
+.btn-enviar{
+    background-color: tomato;
+}
+#txtuser{
+    width: 70%;
+}
+#txtNombre{
+    width: 67%;
+}
+.contactoformulario{
+    background-color: white;
+    border-radius: 40px;
+}
+.contacto-titulo{
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    
+}
+.texto-inicio .info{
+    margin: auto;
+    text-transform: uppercase;
+    text-align: left;
+    position: relative  ;
+    padding-left: 600px;
+    font-size: 20px;
+}
