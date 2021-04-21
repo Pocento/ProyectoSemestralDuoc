@@ -316,3 +316,81 @@ footer {
     padding-left: 600px;
     font-size: 20px;
 }
+
+.productos{
+
+    float: left;
+    margin-top: 55px;
+}
+
+
+
+.productos img{
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.caja{
+    border-radius: 40px;
+    background-color: white;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.productos h3{
+    font-size: 1.7em;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.logo-productos{
+
+    text-align: center;
+    color: black;
+    margin-top: 85px;
+}
+
+.productos .subtitulos{
+    margin-top: 25px;
+}
+
+.productos img{
+    justify-items: center;
+    width: 100%;
+    padding: 20px 40px;
+
+}
+
+.productos a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-left: 115px;
+    padding: 5px 30px;
+    font-size: 15px;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+
+.vermas-btn{
+    background-color: green;
+    border: none;
+    color:black;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.vermas-btn:hover{
+    background-color: rgb(3, 80, 3);
+
+}
+
+.productos #rascadores {
+    margin-top: 25px;
+
+}
